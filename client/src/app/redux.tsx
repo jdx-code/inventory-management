@@ -24,12 +24,13 @@ import { PersistGate } from "redux-persist/integration/react";
 import createWebStorage from "redux-persist/lib/storage/createWebStorage";
 
 /* REDUX PERSISTENCE */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const createNoopStorage = () => {
   return {
     getItem(_key: string) {
       return Promise.resolve(null);
     },
-    setItem(_key: string, value: any) {
+    setItem(_key: string, value: string | null) {
       return Promise.resolve(value);
     },
     removeItem(_key: string) {
