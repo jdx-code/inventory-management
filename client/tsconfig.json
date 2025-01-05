@@ -10,8 +10,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve", // For React 17+ JSX Transform
+    "isolatedModules": true,    
     "incremental": true,
     "plugins": [
       {
