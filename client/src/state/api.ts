@@ -7,6 +7,13 @@ export interface Product {
     rating?: number;
     stockQuantity: number;
   }
+
+  export interface NewProduct {
+    name: string;
+    price: number;
+    rating?: number;
+    stockQuantity: number;
+  }
   
   export interface SalesSummary {
     salesSummaryId: string;
