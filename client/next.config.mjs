@@ -1,12 +1,10 @@
-// import type { NextConfig } from "next";
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "s3-jd-inventorymanagement.s3.ap-south-1.amazonaws.com/",
+        hostname: "s3-jd-inventorymanagement.s3.ap-south-1.amazonaws.com",
         port: "",
         pathname: "/**",
       },
